@@ -1,0 +1,154 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 auto;
+    background: #001e46;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr;
+    grid-template-rows: 0.3fr 3fr;
+    grid-template-areas: 
+    "header aside nav"
+    "article main main"
+    ;
+}
+header{
+    grid-area: header;
+    background: linear-gradient(to top,#001e46, #001837);
+}
+
+header img{
+    width: 170px;
+    margin: 30px 0 0 50px;
+}
+aside{
+    grid-area: aside;
+    background: linear-gradient(to top,#001e46, #001837);
+}
+
+h1{
+    color: #ffc800;
+    font-size: 40px;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(to top,#001e46, #001837);
+}
+nav a:hover{
+    text-decoration: underline;
+}
+#flex-nav{
+    display: flex;
+    align-items: center;
+    
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    margin: 0 40px;
+    font-size: 20px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #ffc800;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+}
+main table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+main tr td{
+    width: 16%;
+    padding: 12px 0;
+}
+main tr td:nth-child(5){
+    background-color: #ffc80048;
+}
+main tr:nth-child(even){
+    border: 1px solid #ddd;
+    border-bottom: 1px dotted #ddd;
+    padding: 0;
+}
+
+main th, main td{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 0;
+    text-align: center;
+  }
+
+main tr:first-child th{
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+main  th:first-child, main td:first-child {
+    text-align: left;
+  }
+main button{
+    border: 1px solid rgb(206, 206, 206);
+    color: rgb(72, 72, 72);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+main button:hover{
+    color: rgb(0, 0, 0);
+}
+h2{
+    margin: 0;
+    font-size: 30px;
+}
+#head-calendar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+article{
+    grid-area: article;
+    background-color: white;
+}
+article #month {
+    border-collapse: collapse;
+    margin: 0 0 0 40px;
+  }
+  
+article #month caption {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+article #month th, article #month td {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+  
+article .empty {
+    background-color: #c8c8c8;
+  }
+
+article #day{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 50px 0 0 40px;
+}
+article #day tr:first-child th:last-child{
+    padding: 0 53px;
+}
+
+footer{
+    color: white;
+    background-color: #001e46;
+}
