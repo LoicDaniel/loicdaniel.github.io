@@ -1,6 +1,10 @@
 
 @import url('style.css');
 
+html, body, #wrapper{
+    overflow-y: show;
+}
+
 #appwindows{
     width: 744px;
     height: 530px;
