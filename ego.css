@@ -2,6 +2,7 @@
 @import url('style.css');
 
 html, body, #wrapper{
+    height: none;
     overflow-y: show;
 }
 
