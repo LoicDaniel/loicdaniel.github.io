@@ -8,12 +8,14 @@ html, body, #wrapper{
     html, body, #wrapper{
         overflow-y: hidden;
     }
+    body{
+    background-size: cover;
+    }
     
 }
 body{
     margin: 0;
     background-image: url(images/Windows-11-Bloom-Screensaver-Dark-scaled.jpg);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
